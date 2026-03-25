@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inition-scale=1.0">
-        <title> Registo de Tarefas</title>
-        <link rel="stylesheet" href=""
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registro de Tarefas</title>
+        <link rel="stylesheet" href="../Project_CSS/styles.css"/>
     </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+
+            <h1 class="titulo"> Marlon<br/><span>Registo de<br/>Tarefas</span></h1>
+
+            </aside>
+
+            <main class="main">
+                <form id="formTarefa">
+                    <input
+                    type="text"
+                    id="inputTarefa"
+                    placeholder="Digite a sua tarefa aqui...."
+                    required
+                    />
+                    <button type="submit">+ Adicionar</button>
+                </form>
+                <p id="mensagem" class="mensagem oculta">✅ Tarefa adicionada com sucesso!</p>
+                <ul id="listaTarefa" class="lista"></ul>
+            </main>
+        </div>
+        <script src="../Project_JS/script.js"></script>
+    </body>
 </html>
