@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ec;
+    min-width: flex;
+    align-items: stretch;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sidebar{
+    width:260px;
+    background-color: #1a1a2e;
+    padding: 60px 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.titulo{
+    color:#ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.titulo span{
+    color: #e2b04a;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main{
+    flex: 1;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+form{
+    display: flex;
+    gap: 12px;
+}
+
+form input[type="text"]{
+    flex:1;
+    padding: 14px 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font: size 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus{
+    border-color: #1a1a2e;
+}
+
+form button{
+    padding: 14px 28px;
+    background-color: #1a1a2e;
+    color:#fff;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover{
+    background: color #e2b04a;
+    color:#1a1a2e;
+}
+
+.mensagem{ color:#2e7d32;font-size: 0.95rem; font-weight: 600;}
+.oculto {display: none;}
+
+.lista Li{
+    background: #fff;
+    border-left: 4px solid #e2b04a;
+    padding: 14px 18px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    animation: entrar 0.3s ease;
+}
+
+@keyframes entrar{
+    form{opacity: 0; transform: translateY(-8px);}
+    to { opacity: 1; transform: translateY(0);}
+}
