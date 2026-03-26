@@ -7,7 +7,7 @@
 body{
     font-family: 'Georgia', serif;
     background-color: #f4f1ec;
-    min-width: flex;
+    min-height: 100vh;
     align-items: stretch;
 }
 
@@ -57,7 +57,7 @@ form input[type="text"]{
     padding: 14px 18px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    font: size 1rem;
+    font-size: 1rem;
     outline: none;
     transition: border-color 0.2s;
 }
@@ -76,14 +76,14 @@ form button{
     transition: background 0.2s;
 }
 form button:hover{
-    background: color #e2b04a;
+    background-color : #e2b04a;
     color:#1a1a2e;
 }
 
 .mensagem{ color:#2e7d32;font-size: 0.95rem; font-weight: 600;}
 .oculto {display: none;}
 
-.lista Li{
+.lista li {
     background: #fff;
     border-left: 4px solid #e2b04a;
     padding: 14px 18px;
@@ -93,6 +93,23 @@ form button:hover{
 }
 
 @keyframes entrar{
-    form{opacity: 0; transform: translateY(-8px);}
+    form {opacity: 0; transform: translateY(-8px);}
     to { opacity: 1; transform: translateY(0);}
+}
+
+.btn-reiniciar {
+    align-self: flex-start;
+    padding: 10px 22px;
+    background-color: transparent;
+    color: #c0392b;
+    border: 2px solid #c0392b;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-reiniciar:hover {
+    background-color: #c0392b;
+    color: #fff;
 }

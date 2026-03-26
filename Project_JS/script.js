@@ -22,3 +22,9 @@ form.addEventListener("submit", function (evento) {
   input.value = "";
   input.focus();
 });
+
+const btnReiniciar = document.getElementById('btnReiniciar');
+
+btnReiniciar.addEventListener('click', function() {
+    lista.innerHTML = '';
+});
